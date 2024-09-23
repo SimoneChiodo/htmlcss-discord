@@ -6,20 +6,15 @@
 
 /* utils */
 .container {
-    border: 1px dashed black;
-    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-container {
     border: 1px dashed black;
     margin: 10px 0;
     width: 65%;
-}
-
-.section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .footer-section {
@@ -62,10 +57,6 @@
 }
 
 /* tag */
-header > nav {
-    text-align: center;
-    width: 500px;
-}
 
 footer > nav {
     display: flex;
@@ -82,13 +73,53 @@ hr {
 }
 
 /* header */
+header {
+    background-color: #265ee9;
+}
 
-.header-lato {
+.container div,
+.container nav {
+    margin: 15px 0;
+    padding: 10px;
+}
+
+header > nav {
+    text-align: center;
+    width: 500px;
+}
+
+header > div {
     width: 200px;
+}
+
+.header-logo {
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 15px;
 }
 
 .header-login {
     text-align: right;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header div button {
+    padding: 8px;
+    border-radius: 15px;
+    border-color: transparent;
+}
+header div button:hover {
+    cursor: pointer;
 }
 
 /* footer */
@@ -107,11 +138,6 @@ hr {
 /* sfondi */
 .lightblue {
     background-color: lightblue;
-}
-
-.yellow {
-    background-color: #dfa31d;
-    padding: 10px;
 }
 
 .gray {
