@@ -161,14 +161,6 @@ main > div:last-child > .container > .stars > h3 {
     margin: 20px;
 }
 
-header,
-main > div:nth-of-type(1),
-main > div:nth-of-type(2),
-main > div:nth-of-type(3),
-main > div:nth-of-type(4),
-main > figure {
-    display: none;
-}
 .wave-separator {
     background-image: url(../img/wave.svg);
     filter: invert(100%) sepia(80%) saturate(10%) hue-rotate(38deg)
@@ -238,11 +230,12 @@ footer > .container:first-child {
     padding-top: 50px;
     padding-bottom: 35px;
     border-bottom: 1px solid #7189da;
+    margin: 0 60px;
 }
 
 footer > .container > .first-col {
-    height: 500px;
-    width: 20%;
+    height: 300px;
+    width: 25%;
 
     color: white;
 }
@@ -262,8 +255,8 @@ footer > .container > .first-col > a {
 }
 
 footer > .container > .second-col {
-    height: 500px;
-    width: 60%;
+    height: 300px;
+    width: 65%;
 }
 footer > .container > .second-col > div {
     width: 100%;
@@ -272,8 +265,6 @@ footer > .container > .second-col > div {
 }
 footer > .container > .second-col > div > ul > li:first-child {
     color: #7189da;
-}
-footer > .container > .second-col > div:nth-of-type(1) {
 }
 
 footer > .container > nav {
