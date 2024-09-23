@@ -1,0 +1,163 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* utils */
+.container {
+    border: 1px dashed black;
+    margin: 15px 0;
+}
+
+.footer-container {
+    border: 1px dashed black;
+    margin: 10px 0;
+    width: 65%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inline {
+    flex: auto;
+    height: 100%;
+}
+
+.small-container {
+    height: 400px;
+}
+
+.medium-container {
+    height: 500px;
+}
+
+.big-container {
+    height: 700px;
+}
+
+.small {
+    height: 300px;
+    width: 50%;
+}
+
+.medium {
+    height: 400px;
+    width: 65%;
+}
+
+.big {
+    height: 600px;
+    width: 65%;
+}
+
+/* tag */
+header > nav {
+    text-align: center;
+    width: 500px;
+}
+
+footer > nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 0;
+    width: 65%;
+    background-color: #73ebd0;
+}
+
+hr {
+    color: white;
+    width: 930px;
+}
+
+/* header */
+
+.header-lato {
+    width: 200px;
+}
+
+.header-login {
+    text-align: right;
+}
+
+/* footer */
+.footer-container {
+    width: 70%;
+}
+
+.elementi-footer {
+    background-color: #fbb9c5;
+    text-align: center;
+    padding: 3px;
+    border: 1px dashed black;
+}
+
+/* colori */
+/* sfondi */
+.lightblue {
+    background-color: lightblue;
+}
+
+.yellow {
+    background-color: #dfa31d;
+    padding: 10px;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.black {
+    background-color: #23272a;
+}
+
+/* rettangoli */
+.pink {
+    background-color: #f592ef;
+}
+
+.darkblue {
+    background-color: blue;
+}
+
+.blue {
+    background-color: #148bfe;
+
+    width: 60%;
+    height: 100%;
+}
+
+.lightpink {
+    background-color: pink;
+
+    width: 40%;
+    height: 100%;
+}
+
+.green {
+    background-color: green;
+}
+
+.darkpink {
+    background-color: pink;
+
+    height: 100%;
+}
+
+.footer-blue {
+    background-color: #14a1a9;
+
+    width: 15%;
+    border: 1px dashed white;
+}
