@@ -11,6 +11,19 @@
     justify-content: center;
 }
 
+button {
+    padding: 8px;
+    border-radius: 15px;
+    border-color: transparent;
+}
+button:hover {
+    cursor: pointer;
+}
+.black-button {
+    background-color: black;
+    color: white;
+}
+
 .footer-container {
     border: 1px dashed black;
     margin: 10px 0;
@@ -29,21 +42,12 @@
     height: 100%;
 }
 
-.small-container {
-    height: 400px;
-}
-
 .medium-container {
     height: 500px;
 }
 
 .big-container {
     height: 700px;
-}
-
-.small {
-    height: 300px;
-    width: 50%;
 }
 
 .medium {
@@ -73,22 +77,24 @@ hr {
 }
 
 /* header */
-header {
+
+/* upper-header */
+.upper-header {
     background-color: #265ee9;
 }
 
-.container div,
-.container nav {
+.upper-header div,
+.upper-header nav {
     margin: 15px 0;
     padding: 10px;
 }
 
-header > nav {
+.upper-header nav {
     text-align: center;
     width: 500px;
 }
 
-header > div {
+.upper-header div {
     width: 200px;
 }
 
@@ -113,13 +119,25 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-header div button {
-    padding: 8px;
-    border-radius: 15px;
-    border-color: transparent;
+/* lower-header */
+.lower-header {
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+
+    flex-direction: column;
+    color: white;
 }
-header div button:hover {
-    cursor: pointer;
+
+.lower-header h1 {
+    margin: 10px 0;
+}
+.lower-header p {
+    width: 40%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0;
 }
 
 /* footer */
@@ -149,13 +167,6 @@ header div button:hover {
 }
 
 /* rettangoli */
-.pink {
-    background-color: #f592ef;
-}
-
-.darkblue {
-    background-color: blue;
-}
 
 .blue {
     background-color: #148bfe;
