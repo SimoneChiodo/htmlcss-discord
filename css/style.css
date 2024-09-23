@@ -27,6 +27,11 @@ button:hover {
     color: white;
 }
 
+.purple-button {
+    background-color: #7189da;
+    color: white;
+}
+
 /* tag */
 
 footer > nav {
@@ -91,7 +96,8 @@ header nav a:hover {
     background-image: url(../img/jumbo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+
+    height: 500px;
 
     flex-direction: column;
     color: white;
@@ -122,7 +128,7 @@ main > .container {
 }
 
 main > div:last-child {
-    height: 700px;
+    height: 800px;
     /* make last section longer */
 }
 
@@ -140,14 +146,25 @@ main > div:last-child > .container > .card-descr {
     align-items: center;
 }
 
-header,
+main > div:last-child > .container > .stars {
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+main > div:last-child > .container > .stars > h3 {
+    font-size: 1.4rem;
+    margin: 20px;
+}
+
+/* header,
 main > div:nth-of-type(1),
 main > div:nth-of-type(2),
 main > div:nth-of-type(3),
+/* main > div:nth-of-type(4), */
 main > figure {
     display: none;
 }
-.wave-separator {
+*/ .wave-separator {
     background-image: url(../img/wave.svg);
     filter: invert(100%) sepia(80%) saturate(10%) hue-rotate(38deg)
         brightness(110%) contrast(93%);
@@ -166,6 +183,11 @@ main > figure {
     height: 90%;
 }
 
+main > div .card-image {
+    background-size: contain;
+    background-position: center;
+}
+
 main > div:nth-of-type(1) .card-image {
     background-image: url(../img/item1.svg);
 }
@@ -180,6 +202,9 @@ main > div:nth-of-type(3) .card-image {
 
 main > div:nth-of-type(4) .container .card-image {
     background-image: url(../img/item4-big.svg);
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 50px;
 }
 
 .card-descr > * {
