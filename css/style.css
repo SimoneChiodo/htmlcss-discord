@@ -4,6 +4,17 @@
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 5px;
+}
+ul li:not(:first-child):hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 /* UTILS */
 .container {
     display: flex;
@@ -11,7 +22,15 @@
     justify-content: center;
 }
 
-/* button */
+a {
+    text-decoration: none;
+}
+
+.fa {
+    /* social icon */
+    color: white;
+}
+
 button {
     padding: 8px;
     border-radius: 15px;
@@ -32,20 +51,14 @@ button:hover {
     color: white;
 }
 
-/* tag */
-
-footer > nav {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 15px 0;
-    width: 65%;
-    background-color: #73ebd0;
+.discord-logo {
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 15px;
 }
-
-hr {
-    color: white;
-    width: 930px;
+.discord-logo:hover {
+    cursor: pointer;
 }
 
 /* HEADER */
@@ -70,20 +83,12 @@ hr {
     width: 200px;
 }
 
-.header-logo {
-    background-image: url(../img/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 15px;
-}
-
 .header-login {
     text-align: right;
 }
 
 header nav a {
     color: white;
-    text-decoration: none;
     padding: 0 15px;
 }
 
@@ -156,15 +161,15 @@ main > div:last-child > .container > .stars > h3 {
     margin: 20px;
 }
 
-/* header,
+header,
 main > div:nth-of-type(1),
 main > div:nth-of-type(2),
 main > div:nth-of-type(3),
-/* main > div:nth-of-type(4), */
+main > div:nth-of-type(4),
 main > figure {
     display: none;
 }
-*/ .wave-separator {
+.wave-separator {
     background-image: url(../img/wave.svg);
     filter: invert(100%) sepia(80%) saturate(10%) hue-rotate(38deg)
         brightness(110%) contrast(93%);
@@ -219,69 +224,67 @@ main > div:nth-of-type(4) .container .card-image {
 }
 
 /* FOOTER */
-.footer-container {
-    width: 70%;
+footer {
+    background-color: #23272a;
 }
 
 .elementi-footer {
     background-color: #fbb9c5;
     text-align: center;
     padding: 3px;
-    border: 1px dashed black;
 }
 
-.footer-container {
-    border: 1px dashed black;
-    margin: 10px 0;
-    width: 65%;
+footer > .container:first-child {
+    padding-top: 50px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #7189da;
 }
 
-.footer-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+footer > .container > .first-col {
+    height: 500px;
+    width: 20%;
+
+    color: white;
+}
+footer > .container > .first-col > h4 {
+    color: #7189da;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+footer > .container > .first-col > img {
+    height: 13px;
+}
+footer > .container > .first-col > span:hover {
+    cursor: pointer;
+}
+footer > .container > .first-col > a {
+    padding: 10px;
 }
 
-/* colori */
-/* sfondi */
-.lightblue {
-    background-color: lightblue;
-}
-
-.gray {
-    background-color: gray;
-}
-
-.black {
-    background-color: #23272a;
-}
-
-/* rettangoli */
-
-.blue {
-    background-color: #148bfe;
-
+footer > .container > .second-col {
+    height: 500px;
     width: 60%;
+}
+footer > .container > .second-col > div {
+    width: 100%;
     height: 100%;
+    color: white;
+}
+footer > .container > .second-col > div > ul > li:first-child {
+    color: #7189da;
+}
+footer > .container > .second-col > div:nth-of-type(1) {
 }
 
-.lightpink {
-    background-color: pink;
+footer > .container > nav {
+    display: flex;
+    justify-content: space-between;
 
-    width: 40%;
-    height: 100%;
+    padding: 15px 0;
+    width: 90%;
+    padding-bottom: 50px;
 }
-
-.darkpink {
-    background-color: pink;
-
-    height: 100%;
-}
-
-.footer-blue {
-    background-color: #14a1a9;
-
-    width: 15%;
-    border: 1px dashed white;
+.footer-logo {
+    width: 200px;
+    height: 25px;
 }
