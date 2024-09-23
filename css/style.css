@@ -4,55 +4,27 @@
     padding: 0;
 }
 
-/* utils */
+/* UTILS */
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* button */
 button {
     padding: 8px;
     border-radius: 15px;
     border-color: transparent;
 }
+
 button:hover {
     cursor: pointer;
 }
+
 .black-button {
     background-color: black;
     color: white;
-}
-
-.footer-container {
-    border: 1px dashed black;
-    margin: 10px 0;
-    width: 65%;
-}
-
-.footer-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.inline {
-    flex: auto;
-    height: 100%;
-}
-
-.medium-container {
-    height: 500px;
-}
-
-.big-container {
-    height: 700px;
-}
-
-.medium {
-    height: 400px;
-    width: 65%;
 }
 
 .big {
@@ -76,7 +48,7 @@ hr {
     width: 930px;
 }
 
-/* header */
+/* HEADER */
 
 /* upper-header */
 .upper-header {
@@ -133,6 +105,7 @@ header nav a:hover {
 .lower-header h1 {
     margin: 10px 0;
 }
+
 .lower-header p {
     width: 40%;
     text-align: center;
@@ -140,7 +113,71 @@ header nav a:hover {
     margin: 20px 0;
 }
 
-/* footer */
+/* MAIN */
+main > .container:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+main > .wave-separator:nth-child(odd) {
+    transform: rotate(180deg);
+}
+
+main > .container {
+    height: 500px;
+}
+
+main > .container:last-child {
+    height: 700px;
+    /* make last section longer */
+}
+
+.wave-separator {
+    background-image: url(../img/wave.svg);
+    filter: invert(100%) sepia(80%) saturate(10%) hue-rotate(38deg)
+        brightness(110%) contrast(93%);
+    height: 100px;
+}
+
+.card {
+    height: 400px;
+    width: 65%;
+}
+
+.card-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+}
+
+main > .container:nth-child(1) .card-image {
+    background-image: url(../img/item1.svg);
+}
+
+main > .container:nth-child(2) .card-image {
+    background-image: url(../img/item2.svg);
+}
+
+main > .container:nth-child(3) .card-image {
+    background-image: url(../img/item3.svg);
+}
+
+main > .container:nth-child(4) .card-image {
+    background-image: url(../img/item4.svg);
+}
+
+.card-descr > * {
+    padding-left: 80px;
+}
+
+.card-descr h2 {
+    font-size: 2.5rem;
+}
+.card-descr p {
+    font-size: 1.2rem;
+}
+
+/* FOOTER */
 .footer-container {
     width: 70%;
 }
@@ -150,6 +187,19 @@ header nav a:hover {
     text-align: center;
     padding: 3px;
     border: 1px dashed black;
+}
+
+.footer-container {
+    border: 1px dashed black;
+    margin: 10px 0;
+    width: 65%;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* colori */
